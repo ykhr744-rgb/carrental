@@ -1,0 +1,87 @@
+/* الخطوط */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* هيكل الصفحة */
+html { direction: rtl; }
+body { margin: 10px; background-color: #f4f8fb; color: #222222; }
+
+#wrapper { max-width: 1000px; margin: 0 auto; background-color: #ffffff; }
+
+#header { background-color: #1f6f8b; color: #ffffff; padding: 15px; }
+
+#nav { list-style: none; margin: 10px 0; padding: 0; overflow: hidden; }
+#nav li { float: right; margin-left: 10px; }
+#nav a { display: block; color: #ffffff; background-color: #2a9d8f; padding: 6px 14px; text-decoration: none; }
+#nav a:hover, #nav a.active { background-color: #e76f51; }
+
+#content { padding: 10px; }
+
+
+h2 { color: #1f6f8b; }
+h3 { color: #e76f51; }
+a { color: #1f6f8b; }
+
+.card, .note-box, .hero {
+    border: 1px solid #1f6f8b;
+    background-color: #eaf4f8;
+    padding: 10px;
+    margin: 10px 0;
+}
+.note-box { background-color: #fff6dd; border-color: #e9c46a; }
+
+/* الجداول */
+table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+th, td { border: 1px solid #9bb7c4; padding: 6px; text-align: center; }
+th { background-color: #1f6f8b; color: #ffffff; }
+td { background-color: #ffffff; }
+tr.car-row:hover td { background-color: #eaf4f8; }
+tr.selected-row td { background-color: #ffe9a8; }
+tr.details-row { display: none; }
+tr.details-row td { text-align: right; background-color: #f4f8fb; }
+table.info-table th { width: 30%; }
+
+/* النماذج */
+fieldset { border: 1px solid #1f6f8b; margin: 10px 0; padding: 10px; }
+legend { color: #1f6f8b; font-weight: bold; }
+label { font-weight: bold; }
+td label { font-weight: normal; }
+p.field { margin: 10px 0; }
+span.required { color: #d62828; }
+span.hint { color: #777777; font-size: 0.85em; }
+span.error { display: block; color: #d62828; }
+input[type="text"].invalid { border: 1px solid #d62828; background-color: #fdeaea; }
+input[type="text"].valid { border: 1px solid #2a9d8f; background-color: #eafaf7; }
+
+/* الأزرار */
+input[type="button"], input[type="submit"] {
+    background-color: #2a9d8f;
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+input[type="button"]:hover, input[type="submit"]:hover { background-color: #e76f51; }
+input[type="reset"] {
+    background-color: #888888;
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.hidden { display: none; }
+.msg-error { color: #d62828; font-weight: bold; }
+
+/* لوحة النتيجة */
+#resultPanel { display: none; border: 2px solid #e76f51; background-color: #fff3ee; padding: 10px; margin: 10px 0; }
+#resultPanel h2 { color: #e76f51; }
+tr.total-row td { font-weight: bold; background-color: #eaf4f8; }
+tr.final-row td { font-weight: bold; background-color: #e76f51; color: #ffffff; }
+.discount-yes { color: #2a9d8f; font-weight: bold; }
+
+.branch-title { cursor: pointer; background-color: #eaf4f8; border: 1px solid #1f6f8b; padding: 5px; margin: 10px 0 0 0; }
+.branch-title:hover { background-color: #d5e8f0; }
+.branch-body { border: 1px solid #1f6f8b; border-top: none; padding: 5px; }
