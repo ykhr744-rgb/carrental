@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>السيارات - رحلتي لتأجير السيارات</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+  <div id="header">
+    <h1>رحلتي لتأجير السيارات</h1>
+    <p>Rahlaty Car Rental - رحلة مريحة تبدأ من سيارة مناسبة</p>
+  </div>
+
+  <ul id="nav">
+    <li><a href="home.html">الرئيسية</a></li>
+    <li><a href="AboutUs.html">من نحن</a></li>
+    <li><a href="Cars.html" class="active">السيارات</a></li>
+    <li><a href="home.html" id="exitLink">خروج</a></li>
+  </ul>
+
+  <div id="content">
+
+    <h2>السيارات المتوفرة للتأجير</h2>
+    <p>
+      فعّل خيار «إظهار» لعرض تفاصيل السيارة (يمكن إظهار تفاصيل عدة سيارات معاً، ويؤدي الضغط مرة ثانية إلى إخفائها).
+      ثم اختر سيارة أو أكثر واضغط على «متابعة».
+    </p>
+
+    <form id="selectForm" action="#" method="post">
+      <fieldset>
+        <legend>قائمة السيارات</legend>
+        <table id="carsTable">
+          <thead>
+            <tr>
+              <th scope="col">الرمز</th>
+              <th scope="col">الموديل</th>
+              <th scope="col">سنة الصنع</th>
+              <th scope="col">السعر اليومي</th>
+              <th scope="col">إظهار التفاصيل</th>
+              <th scope="col">اختيار</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr class="car-row" id="row-CR-001">
+          <td>CR-001</td>
+          <td><img src="images/cr001.svg" width="80" height="45" alt="Toyota Corolla" /><br /><span class="model-name">Toyota Corolla</span></td>
+          <td>2023</td>
+          <td><span class="price-val">250000</span> ل.س</td>
+          <td>
+            <input type="checkbox" id="show-CR-001" name="show-CR-001" class="chk-show" value="CR-001" />
+            <label for="show-CR-001">إظهار</label>
+          </td>
+          <td>
+            <input type="checkbox" id="sel-CR-001" name="sel-CR-001" class="chk-select" value="CR-001" />
+            <label for="sel-CR-001">اختيار</label>
+          </td>
+        </tr>
+        <tr class="details-row" id="details-CR-001">
+          <td colspan="6">
+            <strong>تفاصيل Toyota Corolla:</strong>
+            <ul>
+              <li>نوع الوقود: بنزين</li>
+              <li>ناقل الحركة: أوتوماتيك</li>
+              <li>عدد المقاعد: 5</li>
+              <li>عداد الكيلومترات: 18,000 كم</li>
+              <li>اللون: أبيض</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="car-row" id="row-CR-002">
+          <td>CR-002</td>
+          <td><img src="images/cr002.svg" width="80" height="45" alt="Kia Sportage" /><br /><span class="model-name">Kia Sportage</span></td>
+          <td>2022</td>
+          <td><span class="price-val">400000</span> ل.س</td>
+          <td>
+            <input type="checkbox" id="show-CR-002" name="show-CR-002" class="chk-show" value="CR-002" />
+            <label for="show-CR-002">إظهار</label>
+          </td>
+          <td>
+            <input type="checkbox" id="sel-CR-002" name="sel-CR-002" class="chk-select" value="CR-002" />
+            <label for="sel-CR-002">اختيار</label>
+          </td>
+        </tr>
+        <tr class="details-row" id="details-CR-002">
+          <td colspan="6">
+            <strong>تفاصيل Kia Sportage:</strong>
+            <ul>
+              <li>نوع الوقود: بنزين</li>
+              <li>ناقل الحركة: أوتوماتيك</li>
+              <li>عدد المقاعد: 5</li>
+              <li>عداد الكيلومترات: 32,000 كم</li>
+              <li>اللون: رمادي</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="car-row" id="row-CR-003">
+          <td>CR-003</td>
+          <td><img src="images/cr003.svg" width="80" height="45" alt="Hyundai Elantra" /><br /><span class="model-name">Hyundai Elantra</span></td>
+          <td>2024</td>
+          <td><span class="price-val">300000</span> ل.س</td>
+          <td>
+            <input type="checkbox" id="show-CR-003" name="show-CR-003" class="chk-show" value="CR-003" />
+            <label for="show-CR-003">إظهار</label>
+          </td>
+          <td>
+            <input type="checkbox" id="sel-CR-003" name="sel-CR-003" class="chk-select" value="CR-003" />
+            <label for="sel-CR-003">اختيار</label>
+          </td>
+        </tr>
+        <tr class="details-row" id="details-CR-003">
+          <td colspan="6">
+            <strong>تفاصيل Hyundai Elantra:</strong>
+            <ul>
+              <li>نوع الوقود: بنزين</li>
+              <li>ناقل الحركة: أوتوماتيك</li>
+              <li>عدد المقاعد: 5</li>
+              <li>عداد الكيلومترات: 9,000 كم</li>
+              <li>اللون: أسود</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="car-row" id="row-CR-004">
+          <td>CR-004</td>
+          <td><img src="images/cr004.svg" width="80" height="45" alt="Chevrolet Spark" /><br /><span class="model-name">Chevrolet Spark</span></td>
+          <td>2021</td>
+          <td><span class="price-val">180000</span> ل.س</td>
+          <td>
+            <input type="checkbox" id="show-CR-004" name="show-CR-004" class="chk-show" value="CR-004" />
+            <label for="show-CR-004">إظهار</label>
+          </td>
+          <td>
+            <input type="checkbox" id="sel-CR-004" name="sel-CR-004" class="chk-select" value="CR-004" />
+            <label for="sel-CR-004">اختيار</label>
+          </td>
+        </tr>
+        <tr class="details-row" id="details-CR-004">
+          <td colspan="6">
+            <strong>تفاصيل Chevrolet Spark:</strong>
+            <ul>
+              <li>نوع الوقود: بنزين</li>
+              <li>ناقل الحركة: يدوي</li>
+              <li>عدد المقاعد: 4</li>
+              <li>عداد الكيلومترات: 54,000 كم</li>
+              <li>اللون: أحمر</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="car-row" id="row-CR-005">
+          <td>CR-005</td>
+          <td><img src="images/cr005.svg" width="80" height="45" alt="Mazda 3" /><br /><span class="model-name">Mazda 3</span></td>
+          <td>2022</td>
+          <td><span class="price-val">350000</span> ل.س</td>
+          <td>
+            <input type="checkbox" id="show-CR-005" name="show-CR-005" class="chk-show" value="CR-005" />
+            <label for="show-CR-005">إظهار</label>
+          </td>
+          <td>
+            <input type="checkbox" id="sel-CR-005" name="sel-CR-005" class="chk-select" value="CR-005" />
+            <label for="sel-CR-005">اختيار</label>
+          </td>
+        </tr>
+        <tr class="details-row" id="details-CR-005">
+          <td colspan="6">
+            <strong>تفاصيل Mazda 3:</strong>
+            <ul>
+              <li>نوع الوقود: بنزين</li>
+              <li>ناقل الحركة: أوتوماتيك</li>
+              <li>عدد المقاعد: 5</li>
+              <li>عداد الكيلومترات: 27,000 كم</li>
+              <li>اللون: أزرق</li>
+            </ul>
+          </td>
+        </tr>
+          </tbody>
+        </table>
+        <div id="selectMsg" class="msg-error"></div>
+        <input type="button" id="btnContinue" value="متابعة" />
+      </fieldset>
+    </form>
+
+    <form id="bookingForm" action="#" method="post" class="hidden">
+
+      <h2>نموذج طلب الحجز</h2>
+
+      <fieldset>
+        <legend>السيارات المختارة</legend>
+        <div id="selectedCars"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>بيانات مقدم الطلب</legend>
+
+        <p class="field">
+          <label for="fullName">الاسم الكامل</label>
+          <span class="hint">(أحرف عربية فقط)</span><br />
+          <input type="text" id="fullName" name="fullName" maxlength="60" />
+          <span class="error" id="err-fullName"></span>
+        </p>
+
+        <p class="field">
+          <label for="nationalId">الرقم الوطني</label>
+          <span class="required">*</span>
+          <span class="hint">(11 خانة، أول خانتين من 01 إلى 14)</span><br />
+          <input type="text" id="nationalId" name="nationalId" maxlength="11" />
+          <span class="error" id="err-nationalId"></span>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>مدة التأجير</legend>
+
+        <p class="field">
+          <label for="startDate">تاريخ بداية التأجير</label>
+          <span class="required">*</span>
+          <span class="hint">(بالصيغة dd-mm-yyyy مثل 15-12-2026)</span><br />
+          <input type="text" id="startDate" name="startDate" maxlength="10" />
+          <span class="error" id="err-startDate"></span>
+        </p>
+
+        <p class="field">
+          <label for="endDate">تاريخ نهاية التأجير</label>
+          <span class="required">*</span>
+          <span class="hint">(بالصيغة dd-mm-yyyy، ويجب أن يكون لاحقاً لتاريخ البداية)</span><br />
+          <input type="text" id="endDate" name="endDate" maxlength="10" />
+          <span class="error" id="err-endDate"></span>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>معلومات الاتصال</legend>
+
+        <p class="field">
+          <label for="mobile">رقم الموبايل</label>
+          <span class="hint">(Syriatel: 093 / 098 / 099 &#8211; MTN: 094 / 095 / 096)</span><br />
+          <input type="text" id="mobile" name="mobile" maxlength="16" />
+          <span class="error" id="err-mobile"></span>
+        </p>
+
+        <p class="field">
+          <label for="email">البريد الإلكتروني</label><br />
+          <input type="text" id="email" name="email" maxlength="80" />
+          <span class="error" id="err-email"></span>
+        </p>
+      </fieldset>
+
+      <p><span class="required">*</span> حقل إلزامي</p>
+
+      <input type="submit" id="btnSubmit" value="إرسال" />
+      <input type="reset" id="btnReset" value="مسح الحقول" />
+    </form>
+
+    <div id="resultPanel">
+      <h2>ملخص طلب الحجز</h2>
+      <div id="resultContent"></div>
+      <input type="button" id="btnCloseResult" value="إغلاق الملخص" />
+    </div>
+
+  </div>
+
+  <div id="footer">
+    جميع الحقوق محفوظة &#169; 2026 - رحلتي لتأجير السيارات (وظيفة تعليمية)
+  </div>
+
+</div>
+
+
+</body>
+</html>
